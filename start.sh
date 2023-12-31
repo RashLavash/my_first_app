@@ -8,7 +8,7 @@ if [ ! -d $VIRTUALENV ]; then
 fi
 
 if [ ! -f $VERTUALENV/bin/pip ]; then
-  curl --silent -show-error --retry 5 https://bootstrap.pypa.io/get-pip.py
+  curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py
   | $VIRTUALENV/bin/python
 fi
 
